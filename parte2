@@ -1,4 +1,4 @@
-// ===== FUNCIONES =====
+
 bool existeId(int id) {
     Nodo* aux = head;
     while (aux != nullptr) {
