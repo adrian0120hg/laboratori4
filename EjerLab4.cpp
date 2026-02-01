@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+struct Nodo {
+    int id;
+    string nombre;
+    float peso;
+    Nodo* sig;
+    Nodo* ant;
+};
+
+Nodo* head = nullptr;
+Nodo* tail = nullptr;
+
+bool existeId(int id);
+void insertarInicio(int id, string nombre, float peso);
+void insertarFinal(int id, string nombre, float peso);
+void mostrarAdelante();
+void mostrarAtras();
+Nodo* buscarPorId(int id);
+bool eliminarPorId(int id);
+int contarPaquetes();
+void liberarLista();
